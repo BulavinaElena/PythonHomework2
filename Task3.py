@@ -3,10 +3,10 @@
 #  (для проверки сумма для 4 элементов = 9,06 (примерно))
 n=int(input("Введите целое число: "))
 list1=[]
-sum=0
+result=1
 for i in range(1, n+1):
-    i=(1+1/i)**i
-    list1.append(i)
-    sum=float(sum+sum(i))
+    result=(1+1/i)**i
+    list1.append(result)
 print(list1)
-print(f'Сумма элементов для {n} чисел заданной последовательности= {sum}')
+print(f'Сумма элементов для {n} чисел заданной последовательности= {sum(list1)}')
+
